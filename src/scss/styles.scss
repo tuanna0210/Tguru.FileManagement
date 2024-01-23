@@ -29,7 +29,7 @@ font-weight: 700;
 font-style: normal;
 }
 
-
+// Custom dashlite css
 .nk-wrap {
     padding-top: 65px;
 }
@@ -41,4 +41,9 @@ font-style: normal;
     .nk-fmg-aside {
       left: 0;
     }
+}
+
+// Custom css
+.link-no-href {
+    cursor: pointer;
 }

@@ -13,14 +13,16 @@ export const routes: Routes = [
         },
         children: [
             {
-                path: '', loadChildren: () => import('./modules/my-drive/my-drive.module').then(m => m.MyDriveModule)
-            },
-            {
-                path: 'starred', loadChildren: () => import('./modules/starred/starred.module').then(m => m.StarredModule)
-            },
-            {
-                path: 'shared', loadChildren: () => import('./modules/shared-drive/shared-drive.module').then(m => m.SharedDriveModule)
+                path: '', loadChildren: () => import('./features/my-drive/my-drive.module').then(m => m.MyDriveModule)
             }
+            // ,
+            // {
+            //     path: 'starred', loadChildren: () => import('./features/starred/starred.module').then(m => m.StarredModule)
+            // }
+            // ,
+            // {
+            //     path: 'shared', loadChildren: () => import('./features/shared-drive/shared-drive.module').then(m => m.SharedDriveModule)
+            // }
         ]
     },
     { path: 'login', component: LandingPageLayoutComponent, pathMatch: 'full' },
